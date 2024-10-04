@@ -2,8 +2,8 @@
 
 .chart-box {
     background-color: $card-white;
-    border-radius: .556rem;
-    padding: 1.333rem 1.111rem;
+    border-radius: 10.008px;
+    padding: 2.222rem;
     color: $medium-brown;
 
     .heading-xl,
@@ -13,12 +13,37 @@
     }
 
     .heading-l {
-        margin-bottom: 3.667rem;
+        margin-bottom: 66.006px;
+    }
+
+    .chart {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        gap: 18px;
+
+        .chart-item {
+            flex: 1;
+
+            .bar {
+                background-color: $red;
+                margin-bottom: .444rem;
+                border-radius: .278rem;
+
+                &.highlight {
+                    background-color: $cyan;
+                }
+            }
+
+            .day {
+                text-align: center;
+            }
+        }
     }
 
     hr {
-        border: 1px solid $cream-bg;
-        margin: 1.778rem 0;
+        border: .056rem solid $cream-bg;
+        margin: 32.004px 0;
     }
 
     .chart-info {
