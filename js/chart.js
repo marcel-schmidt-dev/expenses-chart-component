@@ -6,7 +6,7 @@ export const renderChartBox = (chartData) => {
 
     chartRef.innerHTML = /*html*/`
         <div class="heading-l">Spending - Last 7 days</div>
-        <div class="chart"></div>
+        <div class="chart">${getChartItems(chartData)}</div>
         <hr>
         <div class="chart-info">
             <div>
@@ -32,13 +32,13 @@ const getSummary = (chartData) => {
 };
 
 const getChartItems = (chartData) => {
-
     const highestAmount = Math.max(...chartData.map(item => item.amount));
+    const heightUnit = 150 / highestAmount;
     const chartItems = chartData.map(item => {
         return /*html*/`
             <div class="chart-item">
-                <div class="bar"></div>
-                <div class="day">${item.day}</div>
+                <div class="bar ${item.amount === highestAmount ? 'highlight' : ''}" style="height: ${item.amount * heightUnit}px"></div>
+                <div class="mini-caption day">${item.day}</div>
             </div>`;
     });
 
