@@ -1,4 +1,4 @@
-export const renderHeader = () => {
+export default function renderHeader() {
     const headerRef = document.createElement('div');
     headerRef.classList.add('header');
     headerRef.innerHTML = /*html*/`

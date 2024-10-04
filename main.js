@@ -1,6 +1,6 @@
 import './style.scss';
-import { renderHeader } from './js/header';
-import { renderChartBox } from './js/chart';
+import renderHeader from './components/header/header.js';
+import renderChartBox from './components/chart/chart.js';
 
 const getData = async () => {
   const response = await fetch('./data.json');

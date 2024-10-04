@@ -1,6 +1,5 @@
-export const renderChartBox = (chartData) => {
+export default function renderChartBox(chartData) {
     const summary = getSummary(chartData);
-    const chartItems = getChartItems(chartData);
     const chartRef = document.createElement('div');
     chartRef.classList.add('chart-box');
 
