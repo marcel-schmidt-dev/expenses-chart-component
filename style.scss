@@ -1,4 +1,12 @@
 @import './scss/vars.scss';
+@import './scss/header.scss';
+@import './scss/chart.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: $cream-bg;
@@ -6,11 +14,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
+    font-family: 'DM-Sans-Regular';
+    font-size: 18px;
+    padding: 16px;
 }
 
 #app {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 100%;
+    max-width: 540px;
 }

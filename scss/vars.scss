@@ -8,10 +8,31 @@ $red: #EC755D;
 
 @font-face {
     font-family: 'DM-Sans-Regular';
-    src: url('../fonts/DM-Sans-Regular.ttf') format('truetype');
+    src: url('/fonts/DMSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'DM-Sans-Bold';
-    src: url('../fonts/DM-Sans-Bold.ttf') format('truetype');
+    src: url('/fonts/DMSans-Bold.ttf');
+}
+
+.heading-xl {
+    font-family: DM-Sans-Bold;
+    font-size: 2.667rem;
+}
+
+.heading-l {
+    font-family: DM-Sans-Bold;
+    font-size: 1.778rem;
+}
+
+.body-bold {
+    font-family: DM-Sans-Bold;
+    font-size: 1rem;
+}
+
+.mini-caption {
+    font-family: DM-Sans-Regular;
+    font-size: .833rem;
+    color: $medium-brown;
 }

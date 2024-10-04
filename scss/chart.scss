@@ -1,0 +1,38 @@
+@import './vars.scss';
+
+.chart-box {
+    background-color: $card-white;
+    border-radius: .556rem;
+    padding: 1.333rem 1.111rem;
+    color: $medium-brown;
+
+    .heading-xl,
+    .heading-l,
+    .body-bold {
+        color: $dark-brown;
+    }
+
+    .heading-l {
+        margin-bottom: 3.667rem;
+    }
+
+    hr {
+        border: 1px solid $cream-bg;
+        margin: 1.778rem 0;
+    }
+
+    .chart-info {
+        display: flex;
+        justify-content: space-between;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+
+            &:last-child {
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
