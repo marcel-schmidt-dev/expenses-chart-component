@@ -1,0 +1,16 @@
+@import './scss/vars.scss';
+
+body {
+    background-color: $cream-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
