@@ -20,7 +20,7 @@ This project is a solution to the [Frontend Mentor Expenses Chart Component chal
 
 ### Links
 
-- Live Site URL: [Add live site URL here](#)
+- Live Site URL: [expense-chart-component-ms.netlify.app](https://expense-chart-component-ms.netlify.app/)
 
 ## My Process
 
